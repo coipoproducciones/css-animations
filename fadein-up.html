@@ -1,0 +1,33 @@
+<style>
+/*---FADE IN UP----*/
+/*----dev.coipomedia.com/css-animations----*/
+#p-fadein {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+            0% {transform: translate(0px, 10px);}
+    100% {transform: translate(0px, 0px);}
+         }
+         
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    0% {transform: translate(0px, 10px);}
+            100% {transform: translate(0px, 0px);}
+}
+         
+.fadeIn {
+ -webkit-animation-name: fadeIn;
+ animation-name: fadeIn;
+ 
+}
+/*---FIN FADE IN UP----*/
+</style>
+<body>
+  <p class="fadeIn" id="p-fadein">Texto Fade In.</p>
+</body>
