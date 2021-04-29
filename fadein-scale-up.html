@@ -1,0 +1,28 @@
+<style>
+/*---FADEIN Scale - Up----*/
+/*----dev.coipomedia.com/css-animations----*/
+#p-scale-up {
+    -webkit-animation-timing-function: ease-out; 
+    animation-timing-function: ease-out;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes ScaleUp {
+    0% {opacity: 0; transform: translate(0px, 20px) scale(0)}
+    100% {opacity: 1; transform: translate(0px, 0px) scale(1)}
+    }
+@keyframes fadeInScaleUp {
+    0% {opacity: 0; transform: scale(0.1)}
+    100% {opacity: 1; transform: scale(1)}
+}
+.ScaleUp {
+ -webkit-animation-name: ScaleUp;
+ animation-name: ScaleUp;
+}
+/*---FIN FADEIN Scale - Up----*/
+</style>
+<body>
+<p class="ScaleUp" id="p-scale-up">Texto FadeIn Scale-Up.</br>Woooooo.</p>
+</body>
