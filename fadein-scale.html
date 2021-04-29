@@ -1,29 +1,27 @@
 <style>
-/*---FADEIN Scale----*/
+ /*---FADE IN UP----*/
 /*----dev.coipomedia.com/css-animations----*/
-#p-fadeinscale {
+#p-fadein {
+    -webkit-animation-timing-function: ease-out; 
+    animation-timing-function: ease-out;
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
-@-webkit-keyframes fadeInScale {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-    0% {transform: scale(0.1);}
-    100% {transform: scale(1);}
-         }
-@keyframes fadeInScale {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-    0% {transform: scale(0.1);}
-    100% {transform: scale(1);}
+@-webkit-keyframes fadeIn {
+        0% {opacity: 0; transform: translate(0px, 10px);}
+        100% {opacity: 1; transform: translate(0px, 0px);}
 }
-.fadeInScale {
- -webkit-animation-name: fadeInScale;
- animation-name: fadeInScale;
+@keyframes fadeIn {
+    0% {opacity: 0; transform: translate(0px, 10px);}
+    100% {opacity: 1; transform: translate(0px, 0px);}
 }
-/*---FIN FADEIN Scale----*/
+.fadeIn {
+ -webkit-animation-name: fadeIn;
+ animation-name: fadeIn;
+}
+/*---FIN FADE IN UP----*/
 </style>
 <body>
 <p class="fadeInScale" id="p-fadeinscale">Texto FadeIn Scale.</br>Wiiiii.</p>
