@@ -1,0 +1,30 @@
+<style>
+/*---FADEIN Scale----*/
+/*----dev.coipomedia.com/css-animations----*/
+#p-fadeinscale {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInScale {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    0% {transform: scale(0.1);}
+    100% {transform: scale(1);}
+         }
+@keyframes fadeInScale {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    0% {transform: scale(0.1);}
+    100% {transform: scale(1);}
+}
+.fadeInScale {
+ -webkit-animation-name: fadeInScale;
+ animation-name: fadeInScale;
+}
+/*---FIN FADEIN Scale----*/
+</style>
+<body>
+<p class="fadeInScale" id="p-fadeinscale">Texto FadeIn Scale.</br>Wiiiii.</p>
+</body>
